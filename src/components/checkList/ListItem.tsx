@@ -1,4 +1,4 @@
-import React, { useState, Dispatch, SetStateAction } from 'react'
+import React, { useState } from 'react'
 import deleteIcon from './delete.svg'
 import CheckBox from '../general/checkBox/CheckBox'
 import TextareaAutosize from 'react-textarea-autosize'
