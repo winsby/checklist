@@ -1,24 +1,27 @@
 import React, { useState } from 'react'
+import { useMediaQuery } from 'react-responsive'
 import Header from './Header'
 import ListItem from './ListItem'
 import './CheckList.scss'
 
 const CheckList = () => {
   const [checkListData, setCheckListData] = useState([0])
+  const isMobile = useMediaQuery({
+    query: '(max-width: 450px)',
+  })
 
   const deleteListItem = (idx: number) => {
-    console.log('checkListData', checkListData)
     const changedData = checkListData.filter((item) => {
-      console.log(item, idx)
       return item !== idx
     })
     setCheckListData(changedData)
-    console.log('checkListData after', checkListData)
   }
+
+  console.log('isMobile', isMobile)
 
   return (
     <div className="checklist-container">
-      <div className="checklist-main">
+      <div className={`checklist-main ${isMobile && 'mobile'}`}>
         <Header />
         <div
           className="add-btn"
