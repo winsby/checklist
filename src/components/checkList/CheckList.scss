@@ -22,6 +22,7 @@
       height: 100%;
       width: 100%;
       overflow: hidden;
+      background: transparent;
     }
 
     .add-btn {
@@ -72,6 +73,10 @@
       width: 100%;
       overflow-y: auto;
       max-height: 500px;
+      &.list {
+        max-height: 100%;
+      }
+
       .list-item {
         min-height: 40px;
         margin: 0px 10px 10px 10px;
@@ -116,7 +121,7 @@
           resize: none;
           overflow: hidden;
           border: none;
-          margin-top: -4px;
+          margin-top: -2px;
           font-size: 18px;
           transition: 200ms ease-in-out all;
 

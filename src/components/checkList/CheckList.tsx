@@ -36,7 +36,7 @@ const CheckList = () => {
         >
           Add
         </div>
-        <div className="list">
+        <div className={`list ${isMobile && 'mobile'}`}>
           {checkListData.map((number, idx) => (
             <ListItem
               key={number}
