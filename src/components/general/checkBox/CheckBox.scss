@@ -1,6 +1,6 @@
 .checkbox {
-  height: 22px;
-  width: 22px;
+  height: 28px;
+  width: 28px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,7 +12,7 @@
   transition: 75ms ease-in-out all;
 
   .check {
-    height: 14px;
+    height: 20px;
   }
 
   &.checked {

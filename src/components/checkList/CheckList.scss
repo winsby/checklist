@@ -62,7 +62,7 @@
     .list {
       width: 100%;
       .list-item {
-        min-height: 30px;
+        min-height: 40px;
         margin: 10px 10px 0px 10px;
         padding: 0px 10px 0px 10px;
         background: #eeeeee;
@@ -100,13 +100,13 @@
           background: transparent;
           border: none;
           text-align: left;
-          width: calc(100% - 64px);
-          height: 20px;
+          width: calc(100% - 84px);
+          height: 26px;
           resize: none;
           overflow: hidden;
           border: none;
-          margin-top: -2px;
-          font-size: 16px;
+          margin-top: -6px;
+          font-size: 18px;
           transition: 200ms ease-in-out all;
 
           &:focus {
@@ -114,12 +114,11 @@
           }
           &.checked {
             color: #1b5e20;
-            font-weight: 600;
           }
         }
         .delete-btn {
-          height: 22px;
-          width: 22px;
+          height: 28px;
+          width: 28px;
           border-radius: 7px;
           background: #b71c1c;
           box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
@@ -129,7 +128,7 @@
           align-items: center;
           justify-content: center;
           .delete-icon {
-            height: 14px;
+            height: 20px;
           }
         }
       }
