@@ -1,0 +1,22 @@
+.checkbox {
+  height: 22px;
+  width: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border-radius: 7px;
+  border: 1px #3c3c3c solid;
+  cursor: pointer;
+  user-select: none;
+  transition: 75ms ease-in-out all;
+
+  .check {
+    height: 14px;
+  }
+
+  &.checked {
+    background: #1b5e20;
+    border: 1px white solid;
+  }
+}
